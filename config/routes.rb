@@ -11,7 +11,6 @@ Rails.application.routes.draw do
   end
 
   resources :about, only: [:index]
-  # get '/about', to: 'about#show'
 
   resources :orders, only: [:create, :show]
 
@@ -20,6 +19,10 @@ Rails.application.routes.draw do
     resources :products, except: [:edit, :update, :show]
     resources :categories, except: [:edit, :update, :show, :destroy]
   end
+
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
 
   get '/register' => 'users#new'
   post '/users' => 'users#create'
