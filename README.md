@@ -2,10 +2,23 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of learning Rails by example. 
 
+Testing completed with Rspec and Capybara
+
+## Description
+
+Users can register and login to the page. All users can browse products or sort by category and add items to the cart and complete transactions. 
+
+Admin users can add additional products and categories. 
+
 ## Screenshots 
 
+1. Home Page
 
+![HomePage](https://github.com/Nelly31/jungle_rails/blob/master/screenshots/homepage%20screenshot.png)
 
+2. Checkout Summary
+
+![Cart Checkout Summary Page](https://github.com/Nelly31/jungle_rails/blob/master/screenshots/homepage%20screenshot.png)
 
 ## Setup
 
